@@ -67,3 +67,5 @@ ON t.cod_empregado = e.cod_empregado
 INNER JOIN companhia AS c
 ON t.cod_companhia = c.cod_companhia
 WHERE c.nome_companhia != 'Soft Sell'
+
+
