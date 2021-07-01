@@ -17,7 +17,7 @@ INSERT INTO empregado(
 	(7,'Francisco2','Av. Augusto Severo n.56', 'Natal', 5500),
 	(8,'Tareja2', 'Rua Professor Viana n.897', 'Caico', 3200),
 	(9,'Marcelo2', 'Rua do Peido n.80', 'Currais Novos', 8600),
-	(10,'Mercia2', 'Av. Virgulino Lampiao n.333', 'Mossoro', 12100)
+	(10,'Mercia2', 'Av. Virgulino Lampiao n.333', 'Mossoro', 12100),
 	(11,'Chico', 'Rua das Flores n.13', 'Blumenal', 10101);
 
 INSERT INTO trabalha
