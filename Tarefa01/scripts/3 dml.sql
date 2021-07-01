@@ -47,15 +47,15 @@ WHERE c.cidade_companhia = e.cidade
 
 -- 5) Encontre os nomes de todos os empregados que moram na 
 --    mesma cidade e rua de seu gerente.
- ### encontra o nome dos gerentes
-(SELECT e.nome_empregado
-FROM trabalha t
-INNER JOIN empregado e
-ON t.cod_empregado = e.cod_empregado
-INNER JOIN companhia c
-ON t.cod_companhia = c.cod_companhia
-INNER JOIN gerente g
-ON g.cod_empregado = e.cod_empregado)
+ 
+SELECT e.nome_empregado
+FROM empregado eg, gerente g , empregado e, trabalha t
+WHERE eg.cod_empregado = g.cod_empregado
+	AND e.cod_empregado = t.cod_empregado
+	AND g.cod_companhia = t.cod_companhia
+	AND eg.rua = e.rua
+	AND eg.cidade = e.cidade
+	AND eg.cod_empregado != e.cod_empregado
 
 -- 6) Encontre os nomes de todos os empregados, no banco de 
 --    dados, que não trabalham para a Soft Sell.
