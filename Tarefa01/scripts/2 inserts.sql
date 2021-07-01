@@ -12,18 +12,20 @@ INSERT INTO empregado(
 	(2,'Francisco','Av. Augusto Severo n.56', 'Natal', 3500),
 	(3,'Tareja', 'Rua Professor Viana n.897', 'Caico', 7200),
 	(4,'Marcelo', 'Rua do Peido n.80', 'Currais Novos', 5600),
-	(5,'Mercia', 'Av. Virgulino Lampiao n.333', 'Mossoro', 12500);
+	(5,'Mercia', 'Av. Virgulino Lampiao n.333', 'Mossoro', 12500),
 	(6,'Tarcisio2', 'Rua das Flores n.13', 'Blumenal', 10111),
 	(7,'Francisco2','Av. Augusto Severo n.56', 'Natal', 5500),
 	(8,'Tareja2', 'Rua Professor Viana n.897', 'Caico', 3200),
 	(9,'Marcelo2', 'Rua do Peido n.80', 'Currais Novos', 8600),
-	(10,'Mercia2', 'Av. Virgulino Lampiao n.333', 'Mossoro', 12100);
+	(10,'Mercia2', 'Av. Virgulino Lampiao n.333', 'Mossoro', 12100)
+	(11,'Chico', 'Rua das Flores n.13', 'Blumenal', 10101);
 
 INSERT INTO trabalha
 	(cod_empregado, cod_companhia)
 	VALUES
 	(1,1),(2,1),(3,1),(4,2),(5,2),
-	(6,2),(7,2),(8,3),(9,3),(10,3);
+	(6,2),(7,2),(8,3),(9,3),(10,3)
+	(11,1);
 
 INSERT INTO gerente(
 	cod_empregado, cod_companhia)
